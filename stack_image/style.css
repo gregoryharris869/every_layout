@@ -73,14 +73,9 @@ textarea:not([rows]) {
 }
 
 .main {
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  
-  
-  background-color: rgb(175, 175, 238);
-  padding: 2rem;
-  border-radius: 0.5rem;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: var(--space, 1.5rem);
   
 }
 
@@ -88,6 +83,9 @@ textarea:not([rows]) {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  background-color: blanchedalmond;
+  padding: var(--space, 1.5rem);
+  border-radius: 1rem;
 }
 
 .stack > * {
