@@ -1,3 +1,16 @@
+:root {
+  /* ↓ The modular scale */
+  --s1: 0.25rem;
+  --s2: calc(var(--s1) * 2);
+  --s3: calc(var(--s1) * 3);
+  --s4: calc(var(--s1) * 4);
+  --s5: calc(var(--s1) * 5);
+  --s6: calc(var(--s1) * 6);
+  --border-thin: 1px;
+  --border-thick: 2px;
+}
+
+
 .box {
   /* ↓ Padding set to the first point on the modular scale */
   padding: var(--s1);
